@@ -1,0 +1,9 @@
+*{
+    margin: 0px;
+    text-decoration: none;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}

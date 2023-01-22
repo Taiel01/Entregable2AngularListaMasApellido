@@ -1,0 +1,7 @@
+<div class="cardDiv" *ngFor="let item of personas">
+    <h3>Nombre del alumno: {{ item.nombre | uppercase}}</h3>
+    <p>Edad: {{ item.edad }}</p>
+    <span class="inlineT">Nota:</span><p [ngClass]="item.nota >= 6 ? 'aprobado' : 'desaprobado'" class="inlineT bold"> {{ item.nota }}</p>
+    <p *ngIf="item.nota >= 6">Aprobado</p>
+    <p *ngIf="item.nota < 6">Desaprobado</p>
+</div>
